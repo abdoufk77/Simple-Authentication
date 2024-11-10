@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("../partials/head",{title:"register"})%>
+  </head>
+
+  <header><%- include("../partials/header") %></header>
+
+  <% if (message) { %> <%- include('../partials/alert',{message:message}) %> <%
+  }%>
+  <body>
+    <form method="post">
+      <label for="username">Username:</label><br />
+      <input type="text" id="username" name="username" /><br />
+      <label for="password">Password</label><br />
+      <input type="password" id="password" name="password" /><br />
+      <label for="Cpassword">Confirme Password</label><br />
+      <input type="password" id="Cpassword" name="cpassword" /><br />
+      <button>register</button>
+    </form>
+
+    <footer><%- include("../partials/footer") %></footer>
+  </body>
+</html>
